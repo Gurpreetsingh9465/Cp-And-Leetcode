@@ -37,12 +37,22 @@ class SegmentTree {
         }
 
         int query(int l, int r) { 
-            int res = 0;
-            for (l += size_arr, r += size_arr+1; l < r; l >>= 1, r >>= 1) {
-                if (l&1) res += tree[l++];
-                if (r&1) res += tree[--r];
+            l+=size_arr;
+            r+=size_arr+1;
+            int ans = 0;
+            while(r>l) {
+                if(l & 1) {
+                    ans+=tree[l];
+                    l+=1;
+                }
+                if(r & 1) {
+                    r--;
+                    ans+=tree[r];
+                }
+                r/=2;
+                l/=2;
             }
-            return res;
+            return ans;
         }
 };
 
