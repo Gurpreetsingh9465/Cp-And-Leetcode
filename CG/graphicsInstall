@@ -1,0 +1,9 @@
+sudo apt-get update ;
+sudo apt-get install libsdl-image1.2 libsdl-image1.2-dev guile-1.8 guile-1.8-dev ;
+wget http://download.savannah.gnu.org/releases/libgraph/libgraph-1.0.2.tar.gz ;
+tar -xvf libgraph-1.0.2.tar.gz ;
+cd libgraph-1.0.2 ; 
+./configure ;
+sudo make ;
+sudo make install ;
+sudo cp /usr/local/lib/libgraph.* /usr/lib ;
