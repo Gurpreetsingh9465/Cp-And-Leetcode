@@ -1,0 +1,10 @@
+1. Fast Modulo Multiplication (fastExponent.cpp).
+2. Red Black tree (set/map/multimap are implementation of red black tree).
+3. prefix sum query (0-n) Binary Indexed tree update-logn, query-logn create-nlogn.
+4. trie creating dictionary, prefix based search.
+5. KMP algorithm prefix match strstr implementation.
+6. Manchester's algorithm (longest palindromic substring).
+7. DisjointSet. (make someone representative).
+8. Miller Rabin (test the number whether or not it is prime(with probability), used in cryptography).
+9. Matrix Exponential (application fibonaci number).
+10. 

@@ -1,0 +1,3 @@
+-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+g++ -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 graph.cpp
+-lgraph // in linux
