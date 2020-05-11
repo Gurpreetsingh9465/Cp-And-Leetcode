@@ -27,7 +27,7 @@ class Trie {
                     newNode->setEndOfWord(isEndOfWord);
                     return newNode;
                 }
-                this->children->find(c)->second->setEndOfWord(isEndOfWord);
+                // this->children->find(c)->second->setEndOfWord(isEndOfWord);
                 return this->children->find(c)->second;
             }
             TrieNode *find(char c) {
@@ -74,16 +74,13 @@ class Trie {
 
 int main() {
     Trie *t = new Trie();
-    vector<string> s = {"aman","am", "yolo", "aditya", "harsh","harshbansal","kartik","gulshan"};
+    vector<string> s = {"cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"};
     for(auto i: s) {
         t->insertString(i);
     }
-    cout<<t->findString("aman")<<endl;
-    cout<<t->findString("am")<<endl;
-    cout<<t->findString("ekansh")<<endl;
-    cout<<t->findString("har")<<endl;
-    cout<<t->matches("am")<<endl;
-    cout<<t->matches("yo")<<endl;
-    cout<<t->matches("ek")<<endl;
+    cout<<t->findString("ca")<<endl;
+    cout<<t->findString("cat")<<endl;
+    cout<<t->findString("cats")<<endl;
+    cout<<t->findString("catsdogcats")<<endl;
     return 0;
 }
