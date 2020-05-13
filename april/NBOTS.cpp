@@ -275,69 +275,41 @@ pair<char,int> bestAns(int **arr, int N, int F) {
     for(int i = 1;i<=N;i++) {
         int cur_dig = Rpref[i][2];
         int cur_sum = Rpref[i][3];
-        if(cur_dig > max_digit) {
-            max_char = 'R';
-            max_digit = cur_dig;
+        if(cur_sum>max_sum){
             max_sum = cur_sum;
+            max_digit = cur_dig;
+            max_char = 'R';
             max_index = i;
-        } else if(cur_dig == max_digit) {
-            if(cur_sum>max_sum){
-                max_sum = cur_sum;
-                max_digit = cur_dig;
-                max_char = 'R';
-                max_index = i;
-            }
         }
     }
     for(int i = 1;i<=N;i++) {
         int cur_dig = Lpref[i][2];
         int cur_sum = Lpref[i][3];
-        if(cur_dig > max_digit) {
+        if(cur_sum>max_sum){
+            max_sum = cur_sum;
             max_char = 'L';
             max_digit = cur_dig;
-            max_sum = cur_sum;
             max_index = i;
-        } else if(cur_dig == max_digit) {
-            if(cur_sum>max_sum){
-                max_sum = cur_sum;
-                max_char = 'L';
-                max_digit = cur_dig;
-                max_index = i;
-            }
         }
     }
     for(int i = 1;i<=N;i++) {
         int cur_dig = Upref[i][2];
         int cur_sum = Upref[i][3];
-        if(cur_dig > max_digit) {
+        if(cur_sum>max_sum){
+            max_sum = cur_sum;
             max_char = 'U';
             max_digit = cur_dig;
-            max_sum = cur_sum;
             max_index = i;
-        } else if(cur_dig == max_digit) {
-            if(cur_sum>max_sum){
-                max_sum = cur_sum;
-                max_char = 'U';
-                max_digit = cur_dig;
-                max_index = i;
-            }
         }
     }
     for(int i = 1;i<=N;i++) {
         int cur_dig = Dpref[i][2];
         int cur_sum = Dpref[i][3];
-        if(cur_dig > max_digit) {
+        if(cur_sum>max_sum){
+            max_sum = cur_sum;
             max_char = 'D';
             max_digit = cur_dig;
-            max_sum = cur_sum;
             max_index = i;
-        } else if(cur_dig == max_digit) {
-            if(cur_sum>max_sum){
-                max_sum = cur_sum;
-                max_char = 'D';
-                max_digit = cur_dig;
-                max_index = i;
-            }
         }
     }
     if(max_sum == 0)
