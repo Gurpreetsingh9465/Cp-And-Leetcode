@@ -8,7 +8,27 @@ typedef long long ll;
 const int max_n = 1e5+5;
 
 void solve() {
-    
+    int n;
+    cin>>n;
+    vector<int> v(n);
+    for(int i=0;i<n;i++) {
+        cin>>v[i];
+    }
+    int j = n-1;
+    int ans = 0;
+    sort(v.begin(), v.end());
+    int num = INT_MAX;
+    for(int j=n-1;j>=0;j--) {
+        num = min(num,v[j]);
+        num--;
+        if(num == 0){
+            num = INT_MAX;
+            ans++;
+        }
+    }
+    if(num == 0)
+        ans++;
+    cout<<ans<<"\n";
 }
 
 

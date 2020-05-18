@@ -8,18 +8,23 @@ typedef long long ll;
 const int max_n = 1e5+5;
 
 void solve() {
-    
+    int n,m;
+    cin>>n>>m;
+    if(n == 1) {
+        cout<<"0\n";
+        return;
+    }
+    if(n == 2) {
+        cout<<m<<"\n";
+        return;
+    }
+    cout<<2*m<<"\n";
+    return;
 }
 
 
 int main() {
-    #ifdef ONLINE_JUDGE
-        fastIO;
-    #endif
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
+    fastIO;
     int T;
     cin>>T;
     while (T--) {

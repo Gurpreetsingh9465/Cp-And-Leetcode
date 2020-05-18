@@ -8,7 +8,18 @@ typedef long long ll;
 const int max_n = 1e5+5;
 
 void solve() {
-    
+    ll a,b,c,d;
+    cin>>a>>b>>c>>d;
+    if((a-b)<=0) {
+        cout<<b<<"\n";
+        return;
+    }
+    if((c-d)<=0) {
+        cout<<-1<<"\n";
+        return ;
+    }
+    ll ans = b+(ceil((((a-b)*1.0)/((c-d)*1.0)))*c*1LL);
+    cout<<ans<<"\n";
 }
 
 

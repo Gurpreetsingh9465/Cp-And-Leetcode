@@ -5,28 +5,18 @@
 using namespace std;
 typedef long long ll;
 
-const int max_n = 1e5+5;
-
 void solve() {
     
 }
 
 
 int main() {
-    #ifdef ONLINE_JUDGE
-        fastIO;
-    #endif
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
-    int T;
+    fastIO;
+    ll T;
     cin>>T;
-    while (T--) {
+    for(ll t=1;t<=T;t++) {
+        cout<<"Case #"<<t<<": ";
         solve();
     }
-    
     return 0;
 }
-
-

@@ -5,21 +5,16 @@
 using namespace std;
 typedef long long ll;
 
-const int max_n = 1e5+5;
 
 void solve() {
-    
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+    cout<<b<<" "<<c<<" "<<c<<"\n";
 }
 
 
 int main() {
-    #ifdef ONLINE_JUDGE
-        fastIO;
-    #endif
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
+    fastIO;
     int T;
     cin>>T;
     while (T--) {

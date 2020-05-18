@@ -8,6 +8,27 @@ typedef long long ll;
 const int max_n = 1e5+5;
 
 void solve() {
+
+    int a,b,c,d;
+    cin>>a>>b>>c>>d;
+//233
+    vector<int> v(d-a+1);
+    int count = 0;
+    for(int i=d;i>=c;i--) {
+        int l = a;
+        int r = c;
+        while (l<=b && r>=b) {
+            if((l+r)>i) {
+                count+=(b-l+1)+((l+r)-i+1);
+                r--;
+            } else {
+                l++;
+            }
+        }
+        break;
+    }
+
+    cout<<count<<"\n";
     
 }
 
@@ -20,12 +41,7 @@ int main() {
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
     #endif
-    int T;
-    cin>>T;
-    while (T--) {
-        solve();
-    }
-    
+    solve();
     return 0;
 }
 

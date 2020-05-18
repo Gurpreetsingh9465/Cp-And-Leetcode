@@ -8,14 +8,14 @@ typedef long long ll;
 const int max_n = 1e5+5;
 
 void solve() {
-    
+    int n;
+    cin>>n;
+    cout<<n<<"\n";
 }
 
 
 int main() {
-    #ifdef ONLINE_JUDGE
-        fastIO;
-    #endif
+    fastIO;
     #ifndef ONLINE_JUDGE
         freopen("input.txt", "r", stdin);
         freopen("output.txt", "w", stdout);
