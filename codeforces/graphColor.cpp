@@ -7,7 +7,6 @@ typedef long long ll;
 
 const int max_n = 1e5+5;
 
-bool rec()
 
 void solve() {
     int n,m;
@@ -29,10 +28,10 @@ void solve() {
     memset(visited,false,sizeof(visited));
     for(int i=1;i<=n;i++) {
         if(visited[i] == false) {
-            bool a =rec();
-            if(a == false) {
-                
-            }
+            // bool a =rec();
+            // if(a == false) {
+
+            // }
         }
     }
 }
