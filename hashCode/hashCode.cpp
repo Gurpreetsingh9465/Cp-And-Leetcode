@@ -25,7 +25,7 @@ vector<int> split(string str, string token){
 }
 
 bool comparator(pair<int,int> l, pair<int, int> r) {
-    return l.first>r.first;
+    return r.first<l.first;
 }
 
 bool comparator2(pair<int,int> l, pair<int, int> r) {
