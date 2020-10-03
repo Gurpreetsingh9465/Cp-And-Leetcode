@@ -29,7 +29,7 @@ bool comparator(pair<int,int> l, pair<int, int> r) {
 }
 
 bool comparator2(pair<int,int> l, pair<int, int> r) {
-    return l.second>r.second;
+    return r.second<l.second;
 }
 
 class Library {
