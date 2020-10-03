@@ -4,7 +4,7 @@ public:
     
     bool cust_bs(vector<vector<int>> &matrix, int target, int j) {
         int low = 0;
-        int high = matrix.size()-1;
+        int high = matrix.size() - 1;
         int mid;
         while(low<=high) {
             mid = (high+low)/2;
