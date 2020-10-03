@@ -15,7 +15,7 @@ int main() {
     ll T;
     cin>>T;
     for(ll t=1;t<=T;t++) {
-        cout<<"Case #"<<t<<": ";
+        cout<<"Case ##"<<t<<": ";
         solve();
     }
     return 0;
